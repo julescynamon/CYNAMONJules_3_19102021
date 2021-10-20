@@ -1,3 +1,9 @@
+/**
+ * ----------------------------------------
+ * en tete du main
+ * ----------------------------------------
+ */
+
 .Reserv{
     padding: 4rem;
     text-align: center;
@@ -29,11 +35,61 @@
         }
     }
 }
-
+/**
+ * ----------------------------------------
+ * partit Fonction de recherche
+ * ----------------------------------------
+ */
 .fonct{
+    margin-top: 50px;
+    margin-bottom: 70px;
     padding-left: 1.5rem;
     
     &__etapes{
         list-style-type: none;
+        &--btn{
+            display: flex;
+            align-items: center;
+            background: $BackroungColor2;
+            border-radius: 25px 25px 25px 25px;
+            margin-top: 30px;
+            margin-right: 60px;
+            margin-left: -30px;
+            width: 100%;
+            height: 70px;
+            box-shadow: 6px 8px 27px 3px rgba(158,158,158,0.67);
+            cursor: pointer;
+            &:hover{
+                background: #D4C3E9;
+            }
+        }
+        &--number{
+            background: $ColorPrimary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: 23px;
+        }
+        &--icons{
+            padding-left: 28px;
+            padding-right: 20px;
+            color: grey;
+            &:hover {
+                color: $ColorPrimary;
+            }   
+        }
     }
+}
+/**
+ * ----------------------------------------
+ * Carte Restaurant
+ * ----------------------------------------
+ */
+.restaurant{
+    background-color: $BackroungColor2
 }
