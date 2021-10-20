@@ -1,25 +1,39 @@
 .Reserv{
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
     background-color: $BackroungColor2;
 
     &__title{
-        margin: 0;
+        margin: -30px 0 0 0; 
     }
 
     &__subtitle{
         font-weight: 300;
-        margin: 1.5rem 0;
+        margin: 1.5rem -16px;
+        padding-bottom: 1rem;
     }
 
     &__btn{
-        border: 1px solid;
-        padding: 0.75rem 1.5rem;
-        font-weight: 600;
-        font-size: 1.1rem;
+        border: 0;
+        padding: 1rem 1.5rem;
+        font-weight: 1.5rem;
+        font-size: 1rem;
         border-radius: 100px;
         color: white;
-        background-color: $linear-gradient;
+        background: $linear-gradient;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.15);
+            -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    }
+}
+
+.fonct{
+    padding-left: 1.5rem;
+    
+    &__etapes{
+        list-style-type: none;
     }
 }
