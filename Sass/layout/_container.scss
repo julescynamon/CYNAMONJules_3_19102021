@@ -57,7 +57,7 @@
             margin-left: -30px;
             width: 100%;
             height: 70px;
-            box-shadow: 6px 8px 27px 3px rgba(158,158,158,0.67);
+            box-shadow: 3px 3px 20px 3px rgba(158,158,158,0.67);
             cursor: pointer;
             &:hover{
                 background: #D4C3E9;
@@ -91,5 +91,30 @@
  * ----------------------------------------
  */
 .restaurant{
-    background-color: $BackroungColor2
+    background-color: $BackroungColor2 ;
+    &__titre{
+        padding: 30px 0px 0px 25px;
+        font-size: 20px;
+    }
+}
+.card{
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+    background: #fff;
+}
+.card img{
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+}
+.card figure{
+    margin: 0;
+}
+.card figcaption{
+    
 }

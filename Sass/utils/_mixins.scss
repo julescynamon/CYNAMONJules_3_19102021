@@ -3,3 +3,15 @@
     justify-content: center;
 }
 
+@mixin card{
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+    background: #fff;
+}
+
+@mixin card-img{
+    
+}
+
