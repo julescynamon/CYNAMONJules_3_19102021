@@ -141,6 +141,8 @@
 }
 
 .fonct__etapes--btn:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   background: #D4C3E9;
 }
 
@@ -167,10 +169,6 @@
   padding-left: 28px;
   padding-right: 20px;
   color: grey;
-}
-
-.fonct__etapes--icons:hover {
-  color: #9356DC;
 }
 
 /**
