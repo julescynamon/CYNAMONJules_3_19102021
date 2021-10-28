@@ -60,6 +60,7 @@
             box-shadow: 3px 3px 20px 3px rgba(158,158,158,0.67);
             cursor: pointer;
             &:hover{
+                transition: 1s ease-in-out;
                 background: #D4C3E9;
             }
         }
@@ -79,9 +80,10 @@
             padding-left: 28px;
             padding-right: 20px;
             color: grey;
-            &:hover {
-                color: $ColorPrimary;
-            }   
+            &:hover{
+                transition: 1s ease-in-out;
+                color: #9356DC;
+            }
         }
     }
 }
@@ -115,6 +117,13 @@
 .card figure{
     margin: 0;
 }
-.card figcaption{
-    
+.btn__card{
+    position: absolute;
+    top: 25px;
+    left: 240px;
+    border: 2px solid $ColorTertiary;
+    color: #2f997f;
+    background-color: $ColorTertiary;
+    padding: 4px 8px 4px 9px;
+    border-radius: 3px;
 }

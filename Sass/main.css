@@ -141,6 +141,8 @@
 }
 
 .fonct__etapes--btn:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   background: #D4C3E9;
 }
 
@@ -170,6 +172,8 @@
 }
 
 .fonct__etapes--icons:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   color: #9356DC;
 }
 
@@ -210,9 +214,25 @@
   margin: 0;
 }
 
+.btn__card {
+  position: absolute;
+  top: 25px;
+  left: 240px;
+  border: 2px solid #99E2D0;
+  color: #2f997f;
+  background-color: #99E2D0;
+  padding: 4px 8px 4px 9px;
+  border-radius: 3px;
+}
+
 body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
