@@ -22,22 +22,11 @@
     }
 
     &__btn{
-        border: 0;
-        padding: 1rem 1.5rem;
-        font-weight: 1.5rem;
-        font-size: 1rem;
-        border-radius: 100px;
-        color: white;
-        background: $linear-gradient;
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.15);
-            -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @include btn;
         }
-    }
-    
 }
+    
+
 /**
  * ----------------------------------------
  * partit Fonction de recherche
@@ -137,7 +126,7 @@
         position: relative;
         border-radius: 25px;
         box-shadow: 4px 4px 6px #aaa;
-        margin: 20px;
+        margin: 25px;
         background: #fff;
 
         &:hover{
