@@ -12,3 +12,18 @@ a{
 h3{
   margin-bottom: 5px;
 }
+
+@media screen and (min-width: 992px){
+main{
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 0.9fr 1.1fr 1fr; 
+  grid-template-rows: 0fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "reserv reserv reserv"
+    "fonce restau restau"
+    "fonce restau restau"
+    "fonce restau restau"; 
+}
+}

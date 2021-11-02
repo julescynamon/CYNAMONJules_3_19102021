@@ -8,7 +8,9 @@
     padding: 4rem;
     text-align: center;
     background-color: $BackroungColor2;
-
+    @media screen and (min-width: 992px){
+    grid-area: reserv;
+    }
     &__title{
         margin: -30px 0 0 0; 
     }
@@ -34,6 +36,7 @@
             animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
     }
+    
 }
 /**
  * ----------------------------------------
@@ -44,7 +47,9 @@
     margin-top: 50px;
     margin-bottom: 70px;
     padding-left: 1.5rem;
-    
+    @media screen and (min-width: 992px){
+    grid-area: fonce; 
+    }
     &__etapes{
         list-style-type: none;
         &--btn{
@@ -84,6 +89,7 @@
             color: $ColorPrimary;
         }
     }
+    
 }
 /**
  * ----------------------------------------
@@ -95,6 +101,34 @@
 
     background-color: #f6f6f6;
     min-height: 1340px;
+    @media screen and (min-width: 992px){
+    min-height: auto;    
+    grid-area: restau;
+    &__container{
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "card1 card1 card2 card2"
+    "card1 card1 card2 card2"
+    "card3 card3 card4 card4"
+    "card3 card3 card4 card4"; 
+    }
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    }
 
     &__titre{
         padding: 25px 0 10px 22px;

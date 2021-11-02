@@ -6,10 +6,10 @@
  */
 @-webkit-keyframes fountainTextG {
   0% {
-    opacity: 1;
+    opacity: 0,9;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0,8;
   }
   100% {
     opacity: 0;
@@ -18,10 +18,10 @@
 }
 @keyframes fountainTextG {
   0% {
-    opacity: 1;
+    opacity: 0,9;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0,8;
   }
   100% {
     opacity: 0;
@@ -85,12 +85,12 @@
   height: 100%;
   position: fixed;
   background-color: #FFF;
-  opacity: 0.9;
+  opacity: 1;
   left: 0;
   top: 0;
   z-index: 10000;
-  -webkit-animation: fountainTextG 10s forwards;
-          animation: fountainTextG 10s forwards;
+  -webkit-animation: fountainTextG 5s linear forwards;
+          animation: fountainTextG 5s linear forwards;
 }
 
 .PlacementLoader {
@@ -114,8 +114,8 @@
   font-weight: normal;
   font-style: normal;
   float: left;
-  -webkit-animation: bounce_fountainTextG 9s forwards;
-          animation: bounce_fountainTextG 9s forwards;
+  -webkit-animation: bounce_fountainTextG 5s forwards;
+          animation: bounce_fountainTextG 5s forwards;
   animation-name: bounce_fountainTextG;
   -o-animation-name: bounce_fountainTextG;
   -ms-animation-name: bounce_fountainTextG;
@@ -144,71 +144,71 @@
 }
 
 #fountainTextG_1 {
-  animation-delay: 1.43s;
-  -o-animation-delay: 1.43s;
-  -ms-animation-delay: 1.43s;
-  -webkit-animation-delay: 1.43s;
-  -moz-animation-delay: 1.43s;
+  animation-delay: 0.43s;
+  -o-animation-delay: 0.43s;
+  -ms-animation-delay: 0.43s;
+  -webkit-animation-delay: 0.43s;
+  -moz-animation-delay: 0.43s;
 }
 
 #fountainTextG_2 {
-  animation-delay: 1.72s;
-  -o-animation-delay: 1.72s;
-  -ms-animation-delay: 1.72s;
-  -webkit-animation-delay: 1.72s;
-  -moz-animation-delay: 1.72s;
+  animation-delay: 0.72s;
+  -o-animation-delay: 0.72s;
+  -ms-animation-delay: 0.72s;
+  -webkit-animation-delay: 0.72s;
+  -moz-animation-delay: 0.72s;
 }
 
 #fountainTextG_3 {
-  animation-delay: 2s;
-  -o-animation-delay: 2s;
-  -ms-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
+  animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
 }
 
 #fountainTextG_4 {
-  animation-delay: 2.29s;
-  -o-animation-delay: 2.29s;
-  -ms-animation-delay: 2.29s;
-  -webkit-animation-delay: 2.29s;
-  -moz-animation-delay: 2.29s;
+  animation-delay: 1.29s;
+  -o-animation-delay: 1.29s;
+  -ms-animation-delay: 1.29s;
+  -webkit-animation-delay: 1.29s;
+  -moz-animation-delay: 1.29s;
 }
 
 #fountainTextG_5 {
-  animation-delay: 2.57s;
-  -o-animation-delay: 2.57s;
-  -ms-animation-delay: 2.57s;
-  -webkit-animation-delay: 2.57s;
-  -moz-animation-delay: 2.57s;
+  animation-delay: 1.57s;
+  -o-animation-delay: 1.57s;
+  -ms-animation-delay: 1.57s;
+  -webkit-animation-delay: 1.57s;
+  -moz-animation-delay: 1.57s;
 }
 
 #fountainTextG_6 {
-  animation-delay: 2.86s;
-  -o-animation-delay: 2.86s;
-  -ms-animation-delay: 2.86s;
-  -webkit-animation-delay: 2.86s;
-  -moz-animation-delay: 2.86s;
+  animation-delay: 1.86s;
+  -o-animation-delay: 1.86s;
+  -ms-animation-delay: 1.86s;
+  -webkit-animation-delay: 1.86s;
+  -moz-animation-delay: 1.86s;
 }
 
 #fountainTextG_7 {
-  animation-delay: 3.15s;
-  -o-animation-delay: 3.15s;
-  -ms-animation-delay: 3.15s;
-  -webkit-animation-delay: 3.15s;
-  -moz-animation-delay: 3.15s;
+  animation-delay: 2.15s;
+  -o-animation-delay: 2.15s;
+  -ms-animation-delay: 2.15s;
+  -webkit-animation-delay: 2.15s;
+  -moz-animation-delay: 2.15s;
 }
 
 #fountainTextG_8 {
-  animation-delay: 3.43s;
-  -o-animation-delay: 3.43s;
-  -ms-animation-delay: 3.43s;
-  -webkit-animation-delay: 3.43s;
-  -moz-animation-delay: 3.43s;
+  animation-delay: 2.43s;
+  -o-animation-delay: 2.43s;
+  -ms-animation-delay: 2.43s;
+  -webkit-animation-delay: 2.43s;
+  -moz-animation-delay: 2.43s;
 }
 
 .header {
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
@@ -268,6 +268,22 @@
   min-width: 321px;
 }
 
+@media screen and (min-width: 992px) {
+  .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__logo {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
@@ -311,6 +327,12 @@
   background-color: rgba(236, 235, 235, 0.904);
 }
 
+@media screen and (min-width: 992px) {
+  .Reserv {
+    grid-area: reserv;
+  }
+}
+
 .Reserv__title {
   margin: -30px 0 0 0;
 }
@@ -349,6 +371,12 @@
   margin-top: 50px;
   margin-bottom: 70px;
   padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .fonct {
+    grid-area: fonce;
+  }
 }
 
 .fonct__etapes {
@@ -419,6 +447,52 @@
 .restaurants {
   background-color: #f6f6f6;
   min-height: 1340px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurants {
+    min-height: auto;
+    grid-area: restau;
+  }
+  .restaurants__container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+        grid-template-areas: "card1 card1 card2 card2" "card1 card1 card2 card2" "card3 card3 card4 card4" "card3 card3 card4 card4";
+  }
+  .restaurants .card1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card1;
+  }
+  .restaurants .card2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: card2;
+  }
+  .restaurants .card3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card3;
+  }
+  .restaurants .card4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: card4;
+  }
 }
 
 .restaurants__titre {
@@ -513,5 +587,19 @@ a {
 
 h3 {
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: 1fr;
+    -ms-grid-columns: 0.9fr 1.1fr 1fr;
+        grid-template-columns: 0.9fr 1.1fr 1fr;
+    -ms-grid-rows: 0fr 1fr 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "reserv reserv reserv" "fonce restau restau" "fonce restau restau" "fonce restau restau";
+  }
 }
 /*# sourceMappingURL=main.Style.css.map */

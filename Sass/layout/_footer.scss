@@ -7,7 +7,12 @@
     padding: 25px 0px;
     max-width: 100%;
     min-width: 321px;
-
+    @media screen and (min-width: 992px){
+        justify-content: space-around;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+    }
     &__logo {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
