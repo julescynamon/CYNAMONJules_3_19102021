@@ -1,0 +1,39 @@
+.footer {
+    background-color: #353535;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0px;
+    max-width: 100%;
+    min-width: 321px;
+
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        font-weight: normal;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    &__icons{
+        margin-right: 15px;
+        font-size: small;
+    }
+    &__icons2{
+        margin-right: 10px;
+        font-size: small;
+    }
+    & h3 {
+        margin: 0 0 10px 20px;
+        color: #e6e6e6;
+        font-weight: normal;
+    }
+
+    & a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: #FFF;
+        }
+    }
+
+}

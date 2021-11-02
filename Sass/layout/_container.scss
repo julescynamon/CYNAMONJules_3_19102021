@@ -61,7 +61,7 @@
             cursor: pointer;
             &:hover{
                 transition: 1s ease-in-out;
-                background: #D4C3E9;
+                background: lighten($ColorPrimary , $amount: 30);
             }
         }
         &--number{
@@ -69,9 +69,7 @@
             height: 1.5rem;
             width: 1.5rem;
             border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-centre;
             color: white;
             position: absolute;
             left: 23px;
@@ -80,10 +78,10 @@
             padding-left: 28px;
             padding-right: 20px;
             color: grey;
-            &:hover{
-                transition: 1s ease-in-out;
-                color: #9356DC;
-            }
+        }
+        @at-root &--btn:hover &--icons{
+            transition: 1s ease-in-out;
+            color: $ColorPrimary;
         }
     }
 }
@@ -92,32 +90,64 @@
  * Carte Restaurant
  * ----------------------------------------
  */
-.restaurant{
-    background-color: $BackroungColor2 ;
+
+.restaurants{
+
+    background-color: #f6f6f6;
+    min-height: 1340px;
+
     &__titre{
-        padding: 30px 0px 0px 25px;
-        font-size: 20px;
+        padding: 25px 0 10px 22px;
+    }
+    &__card{
+        position: relative;
+        border-radius: 25px;
+        box-shadow: 4px 4px 6px #aaa;
+        margin: 20px;
+        background: #fff;
+
+        &:hover{
+            transform:  scale(1.1);
+            -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    }
+    & img{
+        width: 100%;
+        max-height: 175px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;  
     }
 }
-.card{
-    border-radius: 25px;
-    box-shadow: 4px 4px 6px #aaa;
-    margin: 20px;
+.restaurant__content--infos{
+    margin-left: 20px;
+}
+.restaurant__content--heart{
     position: relative;
-    background: #fff;
+    margin-top: 20px;
+    margin-right: 20px;
+    & .fas{
+        position: absolute;
+        right: -2px;    
+        top: -1px;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 36px;
+        transition: all 150ms ease-in-out;
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
-.card img{
-    object-fit: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    width: 100%;
-    height: 100%;
-    max-height: 220px;
-}
-.card figure{
-    margin: 0;
-}
-.btn__card{
+.btn__cards{
     position: absolute;
     top: 25px;
     left: 240px;

@@ -1,3 +1,121 @@
+#fountainTextG{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #FFF;
+	opacity: 0.9;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	animation: fountainTextG 10s forwards;
+}
+.PlacementLoader{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 290px;
+}
+.fountainTextG{
+	color:rgb(169,68,189);
+	font-family:"Shrikhand";
+	font-size:55px;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float: left;
+	animation: bounce_fountainTextG 9s linear forwards;
+	animation-name:bounce_fountainTextG;
+		-o-animation-name:bounce_fountainTextG;
+		-ms-animation-name:bounce_fountainTextG;
+		-webkit-animation-name:bounce_fountainTextG;
+		-moz-animation-name:bounce_fountainTextG;
+	animation-duration:3s;
+		-o-animation-duration:3s;
+		-ms-animation-duration:3s;
+		-webkit-animation-duration:3s;
+		-moz-animation-duration:3s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	transform:scale(.5);
+		-o-transform:scale(.5);
+		-ms-transform:scale(.5);
+		-webkit-transform:scale(.5);
+		-moz-transform:scale(.5);
+}#fountainTextG_1{
+	animation-delay:1.43s;
+		-o-animation-delay:1.43s;
+		-ms-animation-delay:1.43s;
+		-webkit-animation-delay:1.43s;
+		-moz-animation-delay:1.43s;
+}
+#fountainTextG_2{
+	animation-delay:1.72s;
+		-o-animation-delay:1.72s;
+		-ms-animation-delay:1.72s;
+		-webkit-animation-delay:1.72s;
+		-moz-animation-delay:1.72s;
+}
+#fountainTextG_3{
+	animation-delay:2s;
+		-o-animation-delay:2s;
+		-ms-animation-delay:2s;
+		-webkit-animation-delay:2s;
+		-moz-animation-delay:2s;
+}
+#fountainTextG_4{
+	animation-delay:2.29s;
+		-o-animation-delay:2.29s;
+		-ms-animation-delay:2.29s;
+		-webkit-animation-delay:2.29s;
+		-moz-animation-delay:2.29s;
+}
+#fountainTextG_5{
+	animation-delay:2.57s;
+		-o-animation-delay:2.57s;
+		-ms-animation-delay:2.57s;
+		-webkit-animation-delay:2.57s;
+		-moz-animation-delay:2.57s;
+}
+#fountainTextG_6{
+	animation-delay:2.86s;
+		-o-animation-delay:2.86s;
+		-ms-animation-delay:2.86s;
+		-webkit-animation-delay:2.86s;
+		-moz-animation-delay:2.86s;
+}
+#fountainTextG_7{
+	animation-delay:3.15s;
+		-o-animation-delay:3.15s;
+		-ms-animation-delay:3.15s;
+		-webkit-animation-delay:3.15s;
+		-moz-animation-delay:3.15s;
+}
+#fountainTextG_8{
+	animation-delay:3.43s;
+		-o-animation-delay:3.43s;
+		-ms-animation-delay:3.43s;
+		-webkit-animation-delay:3.43s;
+		-moz-animation-delay:3.43s;
+}
+
+
+
+
+
+
+
+
+
+
+
 .header {
     padding: 1rem $appPadding;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);

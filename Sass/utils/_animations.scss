@@ -1,5 +1,84 @@
 /**
  * ----------------------------------------
+ * animation loader
+ * ----------------------------------------
+ */
+
+@keyframes fountainTextG {
+	0% {
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+		z-index: -10;
+	}
+}
+@keyframes bounce_fountainTextG{
+	0%{
+		transform:scale(1);
+		color:rgb(217,20,125);
+	}
+
+	100%{
+		transform:scale(.5);
+		color:rgb(49,204,152);
+	}
+}
+
+@-o-keyframes bounce_fountainTextG{
+	0%{
+		-o-transform:scale(1);
+		color:rgb(217,20,125);
+	}
+
+	100%{
+		-o-transform:scale(.5);
+		color:rgb(49,204,152);
+	}
+}
+
+@-ms-keyframes bounce_fountainTextG{
+	0%{
+		-ms-transform:scale(1);
+		color:rgb(217,20,125);
+	}
+
+	100%{
+		-ms-transform:scale(.5);
+		color:rgb(49,204,152);
+	}
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+	0%{
+		-webkit-transform:scale(1);
+		color:rgb(217,20,125);
+	}
+
+	100%{
+		-webkit-transform:scale(.5);
+		color:rgb(49,204,152);
+	}
+}
+
+@-moz-keyframes bounce_fountainTextG{
+	0%{
+		-moz-transform:scale(1);
+		color:rgb(217,20,125);
+	}
+
+	100%{
+		-moz-transform:scale(.5);
+		color:rgb(49,204,152);
+	}
+}
+
+
+/**
+ * ----------------------------------------
  * animation btn__hover de reserv
  * ----------------------------------------
  */
