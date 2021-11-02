@@ -19,3 +19,19 @@
             animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 }
+
+@mixin animHeart {
+        position: absolute;
+        right: -2px;    
+        top: -1px;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 36px;
+        transition: all 150ms ease-in-out;
+        &:hover{
+            opacity: 1;
+        }
+}
