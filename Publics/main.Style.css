@@ -114,8 +114,8 @@
   font-weight: normal;
   font-style: normal;
   float: left;
-  -webkit-animation: bounce_fountainTextG 9s linear forwards;
-          animation: bounce_fountainTextG 9s linear forwards;
+  -webkit-animation: bounce_fountainTextG 9s forwards;
+          animation: bounce_fountainTextG 9s forwards;
   animation-name: bounce_fountainTextG;
   -o-animation-name: bounce_fountainTextG;
   -ms-animation-name: bounce_fountainTextG;
@@ -490,8 +490,8 @@
 
 .btn__cards {
   position: absolute;
-  top: 25px;
-  left: 240px;
+  top: 1rem;
+  right: 0.75rem;
   border: 2px solid #99E2D0;
   color: #2f997f;
   background-color: #99E2D0;

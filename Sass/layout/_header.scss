@@ -10,9 +10,7 @@
 	animation: fountainTextG 10s forwards;
 }
 .PlacementLoader{
-	display: flex;
-    justify-content: center;
-    align-items: center;
+	@include flex-centre;
     margin-top: 290px;
 }
 .fountainTextG{
@@ -23,7 +21,7 @@
 	font-weight:normal;
 	font-style:normal;
 	float: left;
-	animation: bounce_fountainTextG 9s linear forwards;
+	animation: bounce_fountainTextG 9s forwards;
 	animation-name:bounce_fountainTextG;
 		-o-animation-name:bounce_fountainTextG;
 		-ms-animation-name:bounce_fountainTextG;
