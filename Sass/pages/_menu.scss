@@ -64,25 +64,19 @@ h2{
             margin-left: 20px;
         }
     &__complet__presentation{
-        max-width: 350px;
-        height: 70px;
-        background: #fff;
-        border-radius: 18px;
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        margin: 10px;
-        padding: 0 0 0 16px;
-        box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+        
         &--animation1{
+            @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
             animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
         }
         &--animation2{
+            @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
             animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.4s both;
         }
         &--animation3{
+            @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
             animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
         }
