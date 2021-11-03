@@ -19,3 +19,83 @@ h2{
     font-family: "Shrikhand", "cursive";
     padding-left: 1rem;
 }
+
+.menu{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 46px 46px 0 0;
+    background-color: rgb(221, 220, 220);
+    position: relative;
+    top: -3rem;
+    width: 100%;
+    & h3 {
+        margin-top: 12px;
+        margin-bottom: 5px;
+    }
+    & p {
+        margin: 0;
+    }
+    &__entete{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__titre{
+        padding-top: 1rem;
+        font-size: 28px;
+        margin-bottom: 15px;
+        &--coeur{
+            margin-top: 2.5rem;
+            margin-right: 1.5rem;
+            cursor: pointer;
+            & .coeur2{
+                @include animHeart;
+            }
+        }
+    }
+    &__complet__entree h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            border-bottom: #99E2D0 4px solid;
+            width: 14%;
+            padding-left: 0px;
+            padding-bottom: 4px;
+            margin-left: 20px;
+        }
+    &__complet__presentation{
+        max-width: 350px;
+        height: 70px;
+        background: #fff;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        margin: 10px;
+        padding: 0 0 0 16px;
+        box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+        &--animation1{
+            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+        }
+        &--animation2{
+            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.4s both;
+        }
+        &--animation3{
+            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
+        }
+    }
+}
+
+.carte__prix{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 25%;
+}
