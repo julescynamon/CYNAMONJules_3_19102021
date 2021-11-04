@@ -79,10 +79,13 @@ h2{
             margin-right: -64px;
             min-width: 4rem;
         }
-        @at-root &--animation1:hover &__confirmation{
+        @at-root &--animation1:hover &__confirmation {
             margin-right: 0px;
             min-width: 4rem;
             transition: margin-right 0.5s;
+        }
+        @at-root &--animation1:hover .cercle {
+            transform: rotate(360deg)
         }
         &--animation1{
             @include carteResto;
@@ -99,6 +102,9 @@ h2{
             min-width: 4rem;
             transition: margin-right 0.5s;
         }
+        @at-root &--animation2:hover .cercle {
+            transform: rotate(360deg)
+        }
         &--animation3{
             @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
@@ -108,6 +114,9 @@ h2{
             margin-right: 0px;
             min-width: 4rem;
             transition: margin-right 0.5s;
+        }
+        @at-root &--animation3:hover .cercle {
+            transform: rotate(360deg)
         }
     }
 }
@@ -120,6 +129,7 @@ h2{
     width: 29px;
     height: 29px;
     color: $ColorTertiary;
+    transition: transform 0.5s;
 }
 
 .carte__prix{

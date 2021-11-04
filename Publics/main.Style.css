@@ -234,6 +234,11 @@ h2 {
   transition: margin-right 0.5s;
 }
 
+.menu__complet__presentation--animation1:hover .cercle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .menu__complet__presentation--animation1 {
   max-width: 350px;
   height: 70px;
@@ -281,6 +286,11 @@ h2 {
   transition: margin-right 0.5s;
 }
 
+.menu__complet__presentation--animation2:hover .cercle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .menu__complet__presentation--animation3 {
   max-width: 350px;
   height: 70px;
@@ -308,6 +318,11 @@ h2 {
   transition: margin-right 0.5s;
 }
 
+.menu__complet__presentation--animation3:hover .cercle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .cercle {
   background-color: #fff;
   display: -webkit-box;
@@ -325,6 +340,10 @@ h2 {
   width: 29px;
   height: 29px;
   color: #99E2D0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .carte__prix {
