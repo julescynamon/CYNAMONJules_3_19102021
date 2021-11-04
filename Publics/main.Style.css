@@ -149,10 +149,16 @@ h2 {
 .menu h3 {
   margin-top: 12px;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu p {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu__entete {
@@ -200,10 +206,32 @@ h2 {
   font-weight: normal;
   font-size: 20px;
   border-bottom: #99E2D0 4px solid;
-  width: 14%;
+  width: 3rem;
   padding-left: 0px;
   padding-bottom: 4px;
   margin-left: 20px;
+}
+
+.menu__complet__presentation__confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  margin-right: -64px;
+  min-width: 4rem;
+}
+
+.menu__complet__presentation--animation1:hover .menu__complet__presentation__confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
 }
 
 .menu__complet__presentation--animation1 {
@@ -246,6 +274,13 @@ h2 {
   animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 3.4s both;
 }
 
+.menu__complet__presentation--animation2:hover .menu__complet__presentation__confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
+}
+
 .menu__complet__presentation--animation3 {
   max-width: 350px;
   height: 70px;
@@ -266,6 +301,32 @@ h2 {
   animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 3.8s both;
 }
 
+.menu__complet__presentation--animation3:hover .menu__complet__presentation__confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
+}
+
+.cercle {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 100px;
+  width: 29px;
+  height: 29px;
+  color: #99E2D0;
+}
+
 .carte__prix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,7 +342,7 @@ h2 {
   font-weight: bold;
   margin-right: 20px;
   margin-bottom: 10px;
-  width: 25%;
+  width: 100%;
 }
 
 #fountainTextG {

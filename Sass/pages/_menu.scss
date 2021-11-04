@@ -32,9 +32,15 @@ h2{
     & h3 {
         margin-top: 12px;
         margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     & p {
         margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     &__entete{
         display: flex;
@@ -58,13 +64,26 @@ h2{
             font-weight: normal;
             font-size: 20px;
             border-bottom: #99E2D0 4px solid;
-            width: 14%;
+            width: 3rem;
             padding-left: 0px;
             padding-bottom: 4px;
             margin-left: 20px;
         }
     &__complet__presentation{
         
+        &__confirmation{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $ColorTertiary;
+            margin-right: -64px;
+            min-width: 4rem;
+        }
+        @at-root &--animation1:hover &__confirmation{
+            margin-right: 0px;
+            min-width: 4rem;
+            transition: margin-right 0.5s;
+        }
         &--animation1{
             @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
@@ -75,12 +94,32 @@ h2{
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
             animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.4s both;
         }
+        @at-root &--animation2:hover &__confirmation{
+            margin-right: 0px;
+            min-width: 4rem;
+            transition: margin-right 0.5s;
+        }
         &--animation3{
             @include carteResto;
             -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
             animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
         }
+        @at-root &--animation3:hover &__confirmation{
+            margin-right: 0px;
+            min-width: 4rem;
+            transition: margin-right 0.5s;
+        }
     }
+}
+
+.cercle{
+    background-color: #fff;
+    @include flex-centre;
+    align-self: center;
+    border-radius: 100px;
+    width: 29px;
+    height: 29px;
+    color: $ColorTertiary;
 }
 
 .carte__prix{
@@ -91,5 +130,8 @@ h2{
     font-weight: bold;
     margin-right: 20px;
     margin-bottom: 10px;
-    width: 25%;
+    width: 100%;
 }
+
+
+
