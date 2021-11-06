@@ -137,6 +137,24 @@ h2{
             white-space: nowrap;
             overflow: hidden;
     }
+    &--animation4{
+        @include carteResto;
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
+    }
+    @at-root &--animation4:hover &__confirmation{
+        margin-right: 0px;
+        min-width: 4rem;
+        transition: margin-right 0.5s;
+    }
+    @at-root &--animation4:hover .cercle {
+        transform: rotate(360deg)
+    }
+    @at-root &--animation4:hover .enTete__menu {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
     }
 }
 
@@ -162,7 +180,7 @@ h2{
     width: 100%;
 }
 
-.Reserv__btn{
+.Reserv__btn2{
     @include btn;
     @include flex-centre;
     margin-top: 65px;
