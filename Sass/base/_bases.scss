@@ -14,7 +14,7 @@ h3{
 }
 
 @media screen and (min-width: 992px){
-main{
+.container{
   display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns: 0.9fr 1.1fr 1fr; 

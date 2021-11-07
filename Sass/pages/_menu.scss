@@ -32,6 +32,56 @@ h2{
     height: 74rem;
     margin-bottom: -3rem;
     cursor: pointer;
+    @include media-min(731px){
+        height: 64rem;
+    }
+    &__complet{
+        @include media-min(461px){
+            display: grid;
+            justify-content: center;
+        }
+        @include media-min(731px){
+            display: grid;
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; 
+            gap: 10px 10px; 
+            grid-template-areas: 
+            "Entree  Plats"
+            "Entree  Plats"
+            "Desserts Desserts"
+            "Boutons Boutons ";
+            
+            .Entree { grid-area: Entree; }
+            .Plats { grid-area: Plats; }
+            .Desserts { grid-area: Desserts; }
+            .Boutons { 
+                grid-area: Boutons;
+                position: absolute;
+                top: 50rem;
+                left: 14rem;
+            }
+            @include media-min(992px){
+                .Boutons{
+                    left: 23rem;
+                }
+                .Entree{
+                    padding-left: 35px;
+                }
+                .Plats{
+                    padding-left: 20px;
+                }
+                .Desserts{
+                    padding-left: 28px;
+                }
+            }
+        }
+        &__carte{
+            @include media-min(992px){
+                width: 100%;
+            }
+        }
+    }
 
     & h3 {
         margin-top: 12px;
@@ -83,6 +133,9 @@ h2{
             margin-right: -64px;
             min-width: 4rem;
         }
+        &--animation1{
+            @include carteResto;
+        }
         @at-root &--animation1:hover &__confirmation {
             margin-right: 0px;
             min-width: 4rem;
@@ -96,15 +149,9 @@ h2{
                 white-space: nowrap;
                 overflow: hidden;
         }
-        &--animation1{
-            @include carteResto;
-            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-        }
+        
         &--animation2{
             @include carteResto;
-            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.4s both;
         }
         @at-root &--animation2:hover &__confirmation{
             margin-right: 0px;
@@ -121,8 +168,7 @@ h2{
     }
         &--animation3{
             @include carteResto;
-            -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-            animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
+        
         }
         @at-root &--animation3:hover &__confirmation{
             margin-right: 0px;
@@ -139,8 +185,6 @@ h2{
     }
     &--animation4{
         @include carteResto;
-        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.8s both;
     }
     @at-root &--animation4:hover &__confirmation{
         margin-right: 0px;
@@ -154,7 +198,7 @@ h2{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-}
+    }
     }
 }
 
