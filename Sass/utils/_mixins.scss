@@ -13,10 +13,12 @@
         color: white;
         background: $linear-gradient;
         cursor: pointer;
+        box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
         &:hover {
             transform: scale(1.15);
             -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            background: $linear-gradient2;
         }
 }
 
@@ -44,7 +46,7 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        margin: 10px;
+        margin: 12px;
         padding: 0 0 0 16px;
         box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }

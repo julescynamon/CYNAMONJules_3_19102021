@@ -64,8 +64,8 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -75,8 +75,8 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.767);
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.767);
   }
 }
 
@@ -288,7 +288,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  margin: 10px;
+  margin: 12px;
   padding: 0 0 0 16px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -323,7 +323,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  margin: 10px;
+  margin: 12px;
   padding: 0 0 0 16px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -358,7 +358,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  margin: 10px;
+  margin: 12px;
   padding: 0 0 0 16px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -393,7 +393,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  margin: 10px;
+  margin: 12px;
   padding: 0 0 0 16px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -468,6 +468,8 @@ h2 {
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   cursor: pointer;
+  -webkit-box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
+          box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,6 +490,8 @@ h2 {
           transform: scale(1.15);
   -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));
+  background: linear-gradient(0deg, #ac86da, #c08ada, #cd86d4, #e48edb, #f8a3e0);
 }
 
 #fountainTextG {
@@ -746,6 +750,7 @@ h2 {
 
 .Reserv__title {
   margin: -30px 0 0 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .Reserv__subtitle {
@@ -764,6 +769,8 @@ h2 {
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   cursor: pointer;
+  -webkit-box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
+          box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
 }
 
 .Reserv__btn:hover {
@@ -771,6 +778,8 @@ h2 {
           transform: scale(1.15);
   -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));
+  background: linear-gradient(0deg, #ac86da, #c08ada, #cd86d4, #e48edb, #f8a3e0);
 }
 
 /**
@@ -808,8 +817,8 @@ h2 {
   margin-left: -30px;
   width: 100%;
   height: 70px;
-  -webkit-box-shadow: 3px 3px 20px 3px rgba(158, 158, 158, 0.67);
-          box-shadow: 3px 3px 20px 3px rgba(158, 158, 158, 0.67);
+  -webkit-box-shadow: 3px 17px 20px -12px rgba(158, 158, 158, 0.67);
+          box-shadow: 3px 17px 20px -12px rgba(158, 158, 158, 0.67);
   cursor: pointer;
 }
 
@@ -907,14 +916,19 @@ h2 {
 }
 
 .restaurants__titre {
-  padding: 25px 0 10px 22px;
+  padding: 42px 0 0px 22px;
+}
+
+.restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
 }
 
 .restaurants__card {
   position: relative;
   border-radius: 25px;
-  -webkit-box-shadow: 4px 4px 6px #aaa;
-          box-shadow: 4px 4px 6px #aaa;
+  -webkit-box-shadow: 4px 4px 6px #c4c4c4;
+          box-shadow: 4px 4px 6px #c4c4c4;
   margin: 25px;
   background: #fff;
 }
