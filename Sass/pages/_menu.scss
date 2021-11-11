@@ -39,13 +39,14 @@ h2{
         @include media-min(461px){
             display: grid;
             justify-content: center;
+            grid-template-columns: 1fr;
         }
         @include media-min(731px){
             display: grid;
             grid-auto-rows: 1fr; 
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 50% 50%; 
             grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; 
-            gap: 10px 10px; 
+            gap: 10px 0; 
             grid-template-areas: 
             "Entree  Plats"
             "Entree  Plats"

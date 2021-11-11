@@ -131,6 +131,8 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -139,11 +141,11 @@ h2 {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     -ms-grid-rows: 0.5fr 0.5fr 1fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
-    gap: 10px 10px;
+    gap: 10px 0;
         grid-template-areas: "Entree  Plats" "Entree  Plats" "Desserts Desserts" "Boutons Boutons ";
   }
   .menu__complet .Entree {
