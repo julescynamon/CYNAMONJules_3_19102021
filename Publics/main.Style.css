@@ -455,7 +455,6 @@ h2 {
   font-weight: bold;
   margin-right: 20px;
   margin-bottom: 10px;
-  width: 100%;
 }
 
 .Reserv__btn2 {
@@ -492,6 +491,12 @@ h2 {
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));
   background: linear-gradient(0deg, #ac86da, #c08ada, #cd86d4, #e48edb, #f8a3e0);
+}
+
+.enTete__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #fountainTextG {
