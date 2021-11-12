@@ -157,23 +157,31 @@
     margin-left: 20px;
 }
 .restaurant__content--heart{
-    position: relative;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
-    & .fas{
-        position: absolute;
-        right: -2px;    
-        top: -1px;
+    width: 30px;
+    fill: white;
+    stroke: black;
+    stroke-width: 25px;
+    svg {
+        overflow: visible;
+        width: 2rem;
+    }
+    
+}
+.heart-main{
+    position: absolute;
+    fill: url(#text-fill);
+    stroke: none;
+}
+.heart-background {
+    width: 50px;
+    position: relative;
+    &:hover{
         opacity: 0;
-        color: transparent;
-        background-image: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-size: 36px;
-        transition: all 150ms ease-in-out;
-        &:hover{
-            opacity: 1;
-        }
+        transition: 0.5s;
     }
 }
 .btn__cards{

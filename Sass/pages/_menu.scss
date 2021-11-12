@@ -21,17 +21,8 @@ h2{
 }
 
 .menu{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 46px 46px 0 0;
-    background-color: rgb(221, 220, 220);
-    position: relative;
-    top: -3rem;
-    width: 100%;
+    @include Menugeneral;
     height: 74rem;
-    margin-bottom: -3rem;
-    cursor: pointer;
     @include media-min(731px){
         height: 64rem;
     }
@@ -58,13 +49,16 @@ h2{
             .Desserts { grid-area: Desserts; }
             .Boutons { 
                 grid-area: Boutons;
-                position: absolute;
-                top: 50rem;
-                left: 14rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                min-width: 134px;
+                margin-left: 25rem;
             }
             @include media-min(992px){
                 .Boutons{
-                    left: 23rem;
+                    margin-left: 35rem;
                 }
                 .Entree{
                     padding-left: 35px;
@@ -109,9 +103,7 @@ h2{
             margin-top: 2.5rem;
             margin-right: 1.5rem;
             cursor: pointer;
-            & .coeur2{
-                @include animHeart;
-            }
+            
         }
     }
     &__complet__entree h2{
@@ -202,6 +194,16 @@ h2{
     }
     }
 }
+.menu2{
+    @include Menugeneral;
+    height: 77rem;
+    @include media-min(461px){
+        height: 80rem;
+    }
+    @include media-min(731px){
+        height: 60rem;
+    }
+}
 
 .cercle{
     background-color: #fff;
@@ -223,12 +225,18 @@ h2{
     margin-right: 20px;
     margin-bottom: 10px;
 }
-
+.centrebtn{
+    display: flex;
+    justify-content: center;
+    @include media-min(731px){
+        display: flex;
+        justify-content: center;
+    }
+}
 .Reserv__btn2{
     @include btn;
     @include flex-centre;
     margin-top: 3rem;
-    margin-left: 4.4rem;
     width: 168px;
     height: 24px;
 }

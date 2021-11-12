@@ -113,9 +113,9 @@ h2 {
   position: relative;
   top: -3rem;
   width: 100%;
-  height: 74rem;
   margin-bottom: -3rem;
   cursor: pointer;
+  height: 74rem;
 }
 
 @media screen and (min-width: 731px) {
@@ -171,15 +171,25 @@ h2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: Boutons;
-    position: absolute;
-    top: 50rem;
-    left: 14rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    min-width: 134px;
+    margin-left: 25rem;
   }
 }
 
 @media screen and (min-width: 731px) and (min-width: 992px) {
   .menu__complet .Boutons {
-    left: 23rem;
+    margin-left: 35rem;
   }
   .menu__complet .Entree {
     padding-left: 35px;
@@ -232,25 +242,6 @@ h2 {
   margin-top: 2.5rem;
   margin-right: 1.5rem;
   cursor: pointer;
-}
-
-.menu__titre--coeur .coeur2 {
-  position: absolute;
-  right: 1.3rem;
-  top: 2.4rem;
-  opacity: 0;
-  color: transparent;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
-  background-image: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 36px;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-}
-
-.menu__titre--coeur .coeur2:hover {
-  opacity: 1;
 }
 
 .menu__complet__entree h2 {
@@ -419,6 +410,32 @@ h2 {
   overflow: hidden;
 }
 
+.menu2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 46px 46px 0 0;
+  background-color: #dddcdc;
+  position: relative;
+  top: -3rem;
+  width: 100%;
+  margin-bottom: -3rem;
+  cursor: pointer;
+  height: 77rem;
+}
+
+@media screen and (min-width: 461px) {
+  .menu2 {
+    height: 80rem;
+  }
+}
+
+@media screen and (min-width: 731px) {
+  .menu2 {
+    height: 60rem;
+  }
+}
+
 .cercle {
   background-color: #fff;
   display: -webkit-box;
@@ -459,6 +476,26 @@ h2 {
   margin-bottom: 10px;
 }
 
+.centrebtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 731px) {
+  .centrebtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .Reserv__btn2 {
   border: 0;
   padding: 1rem 1.5rem;
@@ -481,7 +518,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 3rem;
-  margin-left: 4.4rem;
   width: 168px;
   height: 24px;
 }
@@ -970,28 +1006,42 @@ h2 {
 }
 
 .restaurant__content--heart {
-  position: relative;
-  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 20px;
+  width: 30px;
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
 }
 
-.restaurant__content--heart .fas {
+.restaurant__content--heart svg {
+  overflow: visible;
+  width: 2rem;
+}
+
+.heart-main {
   position: absolute;
-  right: -2px;
-  top: -1px;
-  opacity: 0;
-  color: transparent;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
-  background-image: linear-gradient(0deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 36px;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+  fill: url(#text-fill);
+  stroke: none;
 }
 
-.restaurant__content--heart .fas:hover {
-  opacity: 1;
+.heart-background {
+  width: 50px;
+  position: relative;
+}
+
+.heart-background:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn__cards {
