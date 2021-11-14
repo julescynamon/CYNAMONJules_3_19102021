@@ -24,7 +24,7 @@ h2{
     @include Menugeneral;
     height: 74rem;
     @include media-min(731px){
-        height: 64rem;
+        height: auto;
     }
     &__complet{
         @include media-min(461px){
@@ -36,8 +36,8 @@ h2{
             display: grid;
             grid-auto-rows: 1fr; 
             grid-template-columns: 50% 50%; 
-            grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; 
-            gap: 10px 0; 
+            grid-template-rows: 0.5fr 0.5fr 0fr 0fr; 
+            gap: 20px 0; 
             grid-template-areas: 
             "Entree  Plats"
             "Entree  Plats"
@@ -54,12 +54,10 @@ h2{
                 align-items: center;
                 align-self: center;
                 min-width: 134px;
-                margin-left: 25rem;
+                margin-left: 18rem;
             }
             @include media-min(992px){
-                .Boutons{
-                    margin-left: 35rem;
-                }
+                
                 .Entree{
                     padding-left: 35px;
                 }
@@ -100,10 +98,19 @@ h2{
         font-size: 28px;
         margin-bottom: 15px;
         &--coeur{
-            margin-top: 2.5rem;
-            margin-right: 1.5rem;
-            cursor: pointer;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-right: 35px;
+            width: 30px;
+            fill: rgb(221, 220, 220);
+            stroke: black;
+            stroke-width: 25px;
+            svg {
+            overflow: visible;
+            width: 2rem;
+            }
         }
     }
     &__complet__entree h2{
@@ -201,7 +208,7 @@ h2{
         height: 80rem;
     }
     @include media-min(731px){
-        height: 60rem;
+        height: auto;
     }
 }
 
@@ -222,7 +229,7 @@ h2{
     align-items: flex-end;
     align-self: flex-end;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 7px;
     margin-bottom: 10px;
 }
 .centrebtn{
@@ -231,6 +238,7 @@ h2{
     @include media-min(731px){
         display: flex;
         justify-content: center;
+        width: 130%
     }
 }
 .Reserv__btn2{
@@ -239,6 +247,10 @@ h2{
     margin-top: 3rem;
     width: 168px;
     height: 24px;
+    @include media-min(731px) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
 
 .enTete__menu{

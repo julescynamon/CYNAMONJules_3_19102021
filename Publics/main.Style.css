@@ -120,7 +120,7 @@ h2 {
 
 @media screen and (min-width: 731px) {
   .menu {
-    height: 64rem;
+    height: auto;
   }
 }
 
@@ -143,9 +143,9 @@ h2 {
     grid-auto-rows: 1fr;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 0.5fr 0.5fr 1fr 0.5fr;
-        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
-    gap: 10px 0;
+    -ms-grid-rows: 0.5fr 0.5fr 0fr 0fr;
+        grid-template-rows: 0.5fr 0.5fr 0fr 0fr;
+    gap: 20px 0;
         grid-template-areas: "Entree  Plats" "Entree  Plats" "Desserts Desserts" "Boutons Boutons ";
   }
   .menu__complet .Entree {
@@ -183,14 +183,11 @@ h2 {
     -ms-flex-item-align: center;
         align-self: center;
     min-width: 134px;
-    margin-left: 25rem;
+    margin-left: 18rem;
   }
 }
 
 @media screen and (min-width: 731px) and (min-width: 992px) {
-  .menu__complet .Boutons {
-    margin-left: 35rem;
-  }
   .menu__complet .Entree {
     padding-left: 35px;
   }
@@ -239,9 +236,26 @@ h2 {
 }
 
 .menu__titre--coeur {
-  margin-top: 2.5rem;
-  margin-right: 1.5rem;
-  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-right: 35px;
+  width: 30px;
+  fill: #dddcdc;
+  stroke: black;
+  stroke-width: 25px;
+}
+
+.menu__titre--coeur svg {
+  overflow: visible;
+  width: 2rem;
 }
 
 .menu__complet__entree h2 {
@@ -282,7 +296,7 @@ h2 {
           justify-content: space-between;
   overflow: hidden;
   margin: 12px;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -317,7 +331,7 @@ h2 {
           justify-content: space-between;
   overflow: hidden;
   margin: 12px;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -352,7 +366,7 @@ h2 {
           justify-content: space-between;
   overflow: hidden;
   margin: 12px;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -387,7 +401,7 @@ h2 {
           justify-content: space-between;
   overflow: hidden;
   margin: 12px;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -432,7 +446,7 @@ h2 {
 
 @media screen and (min-width: 731px) {
   .menu2 {
-    height: 60rem;
+    height: auto;
   }
 }
 
@@ -472,7 +486,7 @@ h2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 7px;
   margin-bottom: 10px;
 }
 
@@ -493,6 +507,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 130%;
   }
 }
 
@@ -529,6 +544,13 @@ h2 {
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));
   background: linear-gradient(0deg, #ac86da, #c08ada, #cd86d4, #e48edb, #f8a3e0);
+}
+
+@media screen and (min-width: 731px) {
+  .Reserv__btn2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .enTete__menu {
@@ -1015,7 +1037,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 20px;
+  margin-right: 35px;
   width: 30px;
   fill: white;
   stroke: black;
