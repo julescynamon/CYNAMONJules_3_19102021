@@ -14,8 +14,10 @@
         background: $linear-gradient;
         cursor: pointer;
         box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
+        transition: 0.5s ease-in-out;
         &:hover {
-            transform: scale(1.15);
+            transform: scale(1.10);
+            transition: 0.5s ease-in-out;
             -webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             background: $linear-gradient2;

@@ -533,6 +533,8 @@ h2 {
   cursor: pointer;
   -webkit-box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
           box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,8 +550,10 @@ h2 {
 }
 
 .Reserv__btn2:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));
@@ -815,6 +819,8 @@ h2 {
   padding: 4rem;
   text-align: center;
   background-color: rgba(236, 235, 235, 0.904);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
@@ -846,11 +852,16 @@ h2 {
   cursor: pointer;
   -webkit-box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
           box-shadow: 6px 5px 18px 0px rgba(102, 100, 100, 0.43);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .Reserv__btn:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background: -webkit-gradient(linear, left bottom, left top, from(#ac86da), color-stop(#c08ada), color-stop(#cd86d4), color-stop(#e48edb), to(#f8a3e0));

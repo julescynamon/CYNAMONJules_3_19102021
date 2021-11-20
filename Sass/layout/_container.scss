@@ -8,8 +8,9 @@
     padding: 4rem;
     text-align: center;
     background-color: $BackroungColor2;
+    transition: 0.5s ease-in-out;
     @media screen and (min-width: 992px){
-    grid-area: reserv;
+        grid-area: reserv;
     }
     &__title{
         margin: -30px 0 0 0; 
@@ -24,6 +25,7 @@
 
     &__btn{
         @include btn;
+        transition: 0.5s ease-in-out;
         }
 }
     
