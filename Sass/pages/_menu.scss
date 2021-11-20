@@ -56,6 +56,11 @@ h2{
                 min-width: 134px;
                 margin-left: 18rem;
             }
+            @include media-min(950px){
+                .Boutons{
+                    margin-left: 30rem;
+                }
+            }
             @include media-min(992px){
                 
                 .Entree{
@@ -132,6 +137,7 @@ h2{
             background-color: $ColorTertiary;
             margin-right: -64px;
             min-width: 4rem;
+            transition: margin-right 0.5s;
         }
         &--animation1{
             @include carteResto;

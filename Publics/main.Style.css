@@ -114,7 +114,6 @@ h2 {
   top: -3rem;
   width: 100%;
   margin-bottom: -3rem;
-  cursor: pointer;
   height: 74rem;
 }
 
@@ -184,6 +183,12 @@ h2 {
         align-self: center;
     min-width: 134px;
     margin-left: 18rem;
+  }
+}
+
+@media screen and (min-width: 731px) and (min-width: 950px) {
+  .menu__complet .Boutons {
+    margin-left: 30rem;
   }
 }
 
@@ -282,6 +287,8 @@ h2 {
   background-color: #99E2D0;
   margin-right: -64px;
   min-width: 4rem;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
 }
 
 .menu__complet__presentation--animation1 {
@@ -299,6 +306,7 @@ h2 {
   padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .menu__complet__presentation--animation1:hover .menu__complet__presentation__confirmation {
@@ -334,6 +342,7 @@ h2 {
   padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .menu__complet__presentation--animation2:hover .menu__complet__presentation__confirmation {
@@ -369,6 +378,7 @@ h2 {
   padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .menu__complet__presentation--animation3:hover .menu__complet__presentation__confirmation {
@@ -404,6 +414,7 @@ h2 {
   padding: 0 0 0 10px;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .menu__complet__presentation--animation4:hover .menu__complet__presentation__confirmation {
@@ -434,7 +445,6 @@ h2 {
   top: -3rem;
   width: 100%;
   margin-bottom: -3rem;
-  cursor: pointer;
   height: 77rem;
 }
 
@@ -885,6 +895,8 @@ h2 {
   -webkit-box-shadow: 3px 17px 20px -12px rgba(158, 158, 158, 0.67);
           box-shadow: 3px 17px 20px -12px rgba(158, 158, 158, 0.67);
   cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .fonct__etapes--btn:hover {
@@ -996,9 +1008,13 @@ h2 {
           box-shadow: 4px 4px 6px #c4c4c4;
   margin: 25px;
   background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .restaurants__card:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -1058,6 +1074,8 @@ h2 {
 .heart-background {
   width: 50px;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .heart-background:hover {
