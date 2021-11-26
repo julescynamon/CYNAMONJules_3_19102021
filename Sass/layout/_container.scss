@@ -20,7 +20,7 @@
     &__subtitle{
         font-weight: 300;
         margin: 1.5rem -16px;
-        padding-bottom: 1rem;
+        padding-bottom: $appPadding;
     }
 
     &__btn{
@@ -190,7 +190,7 @@
 }
 .btn__cards{
     position: absolute;
-    top: 1rem;
+    top: $appPadding;
     right: 0.75rem;
     border: 2px solid $ColorTertiary;
     color: #2f997f;

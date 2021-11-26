@@ -7,7 +7,8 @@
 	left: 0;
 	top: 0;
 	z-index: 10000;
-	animation: fountainTextG 5s linear forwards;
+	-webkit-animation: fountainTextG 3s linear forwards;
+	        animation: fountainTextG 3s linear forwards;
 }
 .PlacementLoader{
 	@include flex-centre;
@@ -21,7 +22,8 @@
 	font-weight:normal;
 	font-style:normal;
 	float: left;
-	animation: bounce_fountainTextG 5s forwards;
+	-webkit-animation: bounce_fountainTextG 3s forwards;
+	        animation: bounce_fountainTextG 3s forwards;
 	animation-name:bounce_fountainTextG;
 		-o-animation-name:bounce_fountainTextG;
 		-ms-animation-name:bounce_fountainTextG;
@@ -115,7 +117,7 @@
 
 
 .header {
-    padding: 1rem 0;
+    padding: $appPadding 0;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
     position: relative;
     z-index: 1000;
@@ -141,7 +143,7 @@
     position: relative;
 
     &__icon{
-        padding-right: 1rem;
+        padding-right: $appPadding;
     }
 
     &__text{
