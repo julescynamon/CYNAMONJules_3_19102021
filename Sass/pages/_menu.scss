@@ -1,265 +1,275 @@
-.fa-arrow-left{
-    position: absolute;
-    left: $appPadding;
-    bottom: 1.7rem;
-    font-size: 23px;
+.fa-arrow-left {
+  position: absolute;
+  left: $appPadding;
+  bottom: 1.7rem;
+  font-size: 23px;
 }
 
-.imagedeFond{
+.imagedeFond {
+  width: 100%;
+  height: auto;
+  & img {
     width: 100%;
+    height: 175px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+h2 {
+  font-family: "Shrikhand", "cursive";
+  padding-left: $appPadding;
+}
+
+.menu {
+  @include Menugeneral;
+  height: 74rem;
+  @include media-min(731px) {
     height: auto;
-    & img{
-        width: 100%;
-        height: 175px;
-        -o-object-fit: cover;
-        object-fit: cover;
+  }
+  &__complet {
+    @include media-min(461px) {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr;
     }
-}
+    @include media-min(731px) {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 0.5fr 0.5fr 0fr 0fr;
+      gap: 20px 0;
+      grid-template-areas:
+        "Entree  Plats"
+        "Entree  Plats"
+        "Desserts Desserts"
+        "Boutons Boutons ";
 
-h2{
-    font-family: "Shrikhand", "cursive";
-    padding-left: $appPadding;
-}
-
-.menu{
-    @include Menugeneral;
-    height: 74rem;
-    @include media-min(731px){
-        height: auto;
-    }
-    &__complet{
-        @include media-min(461px){
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 1fr;
-        }
-        @include media-min(731px){
-            display: grid;
-            grid-auto-rows: 1fr; 
-            grid-template-columns: 50% 50%; 
-            grid-template-rows: 0.5fr 0.5fr 0fr 0fr; 
-            gap: 20px 0; 
-            grid-template-areas: 
-            "Entree  Plats"
-            "Entree  Plats"
-            "Desserts Desserts"
-            "Boutons Boutons ";
-            
-            .Entree { grid-area: Entree; }
-            .Plats { grid-area: Plats; }
-            .Desserts { grid-area: Desserts; }
-            .Boutons { 
-                grid-area: Boutons;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                align-self: center;
-                min-width: 134px;
-                margin-left: 18rem;
-            }
-            @include media-min(950px){
-                .Boutons{
-                    margin-left: 30rem;
-                }
-            }
-            @include media-min(992px){
-
-                .Entree{
-                    padding-left: 35px;
-                }
-                .Plats{
-                    padding-left: 20px;
-                }
-                .Desserts{
-                    padding-left: 28px;
-                }
-            }
-        }
-        &__carte{
-            @include media-min(992px){
-                width: 100%;
-            }
-        }
-    }
-
-    & h3 {
-        margin-top: 12px;
-        margin-bottom: 5px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    & p {
-        margin: 0;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    &__entete{
-        display: flex;
-        justify-content: space-between;
-    }
-    &__titre{
-        padding-top: $appPadding;
-        font-size: 28px;
-        margin-bottom: 15px;
-        &--coeur{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-            margin-right: 35px;
-            width: 30px;
-            fill: rgb(221, 220, 220);
-            stroke: black;
-            stroke-width: 25px;
-            svg {
-            overflow: visible;
-            width: 2rem;
-            }
-        }
-    }
-    &__complet__entree h2{
-            font-family: 'Roboto', sans-serif;
-            font-weight: normal;
-            font-size: 20px;
-            border-bottom: #99E2D0 4px solid;
-            width: 3rem;
-            padding-left: 0px;
-            padding-bottom: 4px;
-            margin-left: 20px;
-        }
-    &__complet__presentation{
-        
-        &__confirmation{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $ColorTertiary;
-            margin-right: -64px;
-            min-width: 4rem;
-            transition: margin-right 0.5s;
-        }
-        &--animation1{
-            @include carteResto;
-        }
-        @at-root &--animation1:hover &__confirmation {
-            margin-right: 0px;
-            min-width: 4rem;
-            transition: margin-right 0.5s;
-        }
-        @at-root &--animation1:hover .cercle {
-            transform: rotate(360deg)
-        }
-        @at-root &--animation1:hover .enTete__menu {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-        }
-        
-        &--animation2{
-            @include carteResto;
-        }
-        @at-root &--animation2:hover &__confirmation{
-            margin-right: 0px;
-            min-width: 4rem;
-            transition: margin-right 0.5s;
-        }
-        @at-root &--animation2:hover .cercle {
-            transform: rotate(360deg)
-        }
-        @at-root &--animation2:hover .enTete__menu {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-    }
-        &--animation3{
-            @include carteResto;
-        
-        }
-        @at-root &--animation3:hover &__confirmation{
-            margin-right: 0px;
-            min-width: 4rem;
-            transition: margin-right 0.5s;
-        }
-        @at-root &--animation3:hover .cercle {
-            transform: rotate(360deg)
-        }
-        @at-root &--animation3:hover .enTete__menu {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-    }
-    &--animation4{
-        @include carteResto;
-    }
-    @at-root &--animation4:hover &__confirmation{
-        margin-right: 0px;
-        min-width: 4rem;
-        transition: margin-right 0.5s;
-    }
-    @at-root &--animation4:hover .cercle {
-        transform: rotate(360deg)
-    }
-    @at-root &--animation4:hover .enTete__menu {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    }
-}
-.menu2{
-    @include Menugeneral;
-    height: 77rem;
-    @include media-min(461px){
-        height: 80rem;
-    }
-    @include media-min(731px){
-        height: auto;
-    }
-}
-
-.cercle{
-    background-color: #fff;
-    @include flex-centre;
-    align-self: center;
-    border-radius: 100px;
-    width: 29px;
-    height: 29px;
-    color: $ColorTertiary;
-    transition: transform 0.5s;
-}
-
-.carte__prix{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
-    font-weight: bold;
-    margin-right: 7px;
-    margin-bottom: 10px;
-}
-.centrebtn{
-    display: flex;
-    justify-content: center;
-    @include media-min(731px){
+      .Entree {
+        grid-area: Entree;
+      }
+      .Plats {
+        grid-area: Plats;
+      }
+      .Desserts {
+        grid-area: Desserts;
+      }
+      .Boutons {
+        grid-area: Boutons;
         display: flex;
         justify-content: center;
-        width: 130%
+        align-items: center;
+        align-self: center;
+        min-width: 134px;
+        margin-left: 18rem;
+      }
+      @include media-min(950px) {
+        .Boutons {
+          margin-left: 30rem;
+        }
+      }
+      @include media-min(992px) {
+        .Entree {
+          padding-left: 35px;
+        }
+        .Plats {
+          padding-left: 20px;
+        }
+        .Desserts {
+          padding-left: 28px;
+        }
+      }
     }
+    &__carte {
+      @include media-min(992px) {
+        width: 100%;
+      }
+    }
+  }
+
+  & h3 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  & p {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__entete {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__titre {
+    padding-top: $appPadding;
+    font-size: 28px;
+    margin-bottom: 15px;
+    &--coeur {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-right: 35px;
+      width: 30px;
+      fill: rgb(221, 220, 220);
+      stroke: black;
+      stroke-width: 25px;
+      svg {
+        overflow: visible;
+        width: 2rem;
+      }
+    }
+  }
+  &__complet__entree h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: #99e2d0 4px solid;
+    width: 3rem;
+    padding-left: 0px;
+    padding-bottom: 4px;
+    margin-left: 20px;
+  }
+  &__complet__presentation {
+    &__confirmation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $ColorTertiary;
+      margin-right: -64px;
+      min-width: 4rem;
+      transition: margin-right 0.5s;
+    }
+    &--animation1 {
+      @include carteResto;
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s;
+    }
+    @at-root &--animation1:hover &__confirmation {
+      margin-right: 0px;
+      min-width: 4rem;
+      transition: margin-right 0.5s;
+    }
+    @at-root &--animation1:hover .cercle {
+      transform: rotate(360deg);
+    }
+    @at-root &--animation1:hover .enTete__menu {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &--animation2 {
+      @include carteResto;
+      -webkit-animation-delay: 3.4s;
+      animation-delay: 3.4s;
+    }
+    @at-root &--animation2:hover &__confirmation {
+      margin-right: 0px;
+      min-width: 4rem;
+      transition: margin-right 0.5s;
+    }
+    @at-root &--animation2:hover .cercle {
+      transform: rotate(360deg);
+    }
+    @at-root &--animation2:hover .enTete__menu {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    &--animation3 {
+      @include carteResto;
+      -webkit-animation-delay: 3.8s;
+      animation-delay: 3.8s;
+    }
+    @at-root &--animation3:hover &__confirmation {
+      margin-right: 0px;
+      min-width: 4rem;
+      transition: margin-right 0.5s;
+    }
+    @at-root &--animation3:hover .cercle {
+      transform: rotate(360deg);
+    }
+    @at-root &--animation3:hover .enTete__menu {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    &--animation4 {
+      @include carteResto;
+      animation-delay: 4.2s;
+    }
+    @at-root &--animation4:hover &__confirmation {
+      margin-right: 0px;
+      min-width: 4rem;
+      transition: margin-right 0.5s;
+    }
+    @at-root &--animation4:hover .cercle {
+      transform: rotate(360deg);
+    }
+    @at-root &--animation4:hover .enTete__menu {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
 }
-.Reserv__btn2{
-    @include btn;
-    @include flex-centre;
-    margin-top: 3rem;
-    width: 168px;
-    height: 24px;
-    @include media-min(731px) {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+.menu2 {
+  @include Menugeneral;
+  height: 77rem;
+  @include media-min(461px) {
+    height: 80rem;
+  }
+  @include media-min(731px) {
+    height: auto;
+  }
 }
 
-.enTete__menu{
-    flex: 1;
+.cercle {
+  background-color: #fff;
+  @include flex-centre;
+  align-self: center;
+  border-radius: 100px;
+  width: 29px;
+  height: 29px;
+  color: $ColorTertiary;
+  transition: transform 0.5s;
+}
+
+.carte__prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+.centrebtn {
+  display: flex;
+  justify-content: center;
+  @include media-min(731px) {
+    display: flex;
+    justify-content: center;
+    width: 130%;
+  }
+}
+.Reserv__btn2 {
+  @include btn;
+  @include flex-centre;
+  margin-top: 3rem;
+  width: 168px;
+  height: 24px;
+  @include media-min(731px) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.enTete__menu {
+  flex: 1;
 }

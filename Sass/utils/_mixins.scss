@@ -47,6 +47,8 @@
         padding: 0 0 0 10px;
         box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
         cursor: pointer;
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @mixin media-min($_min-width) {
